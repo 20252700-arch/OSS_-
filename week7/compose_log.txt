@@ -1,0 +1,11 @@
+docker compose up -d
+curl localhost:5000
+curl localhost:5000
+curl localhost:5000
+docker compose logs web > compose_log.txt
+docker compose down
+cat compose_log.txt
+cd ~/week7
+git add week7
+git commit -m "update compose_log"
+git push origin main
